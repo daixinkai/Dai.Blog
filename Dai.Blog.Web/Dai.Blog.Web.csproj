@@ -46,6 +46,22 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Dai.CommonLib.Core, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dai.CommonLib.Core.2.0.1.0\lib\net45\Dai.CommonLib.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dai.CommonLib.Mvc, Version=2.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dai.CommonLib.Mvc.2.0.0.2\lib\net45\Dai.CommonLib.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dai.CommonLib.Sql, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dai.CommonLib.Sql.2.0.0.0\lib\net45\Dai.CommonLib.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dai.CommonLib.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dai.CommonLib.Web.1.0.0.0\lib\net45\Dai.CommonLib.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
