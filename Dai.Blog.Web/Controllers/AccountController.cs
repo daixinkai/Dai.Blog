@@ -15,19 +15,12 @@ namespace Dai.Blog.Web.Controllers
         // GET: Account
         public async Task<ActionResult> Login()
         {
-
             var claims = new List<Claim>();
             claims.Add(new Claim(ClaimTypes.Name, "pokemon"));
             claims.Add(new Claim(ClaimTypes.Role, "Users"));
-
-            var identity = new ClaimsIdentity(claims, "MyClaimLogin");
-
-            //ClaimsPrincipal principal = new ClaimsPrincipal(identity);
-            HttpContext.GetOwinContext().Authentication.SignIn(new AuthenticationProperties { IsPersistent = true }, identity);
-            //var claimsIdentity =
-            //   await UserManager.CreateIdentityAsync(principal, DefaultAuthenticationTypes.ApplicationCookie);
-            //AuthManager.SignOut();
-            //AuthManager.SignIn(new AuthenticationProperties { IsPersistent = false }, claimsIdentity);
+            var identity = new ClaimsIdentity(claims, DaiBlogAuthenticationTypes.ApplicationCookie);
+            //HttpContext.GetOwinContext().Authentication.SignIn(new AuthenticationProperties { IsPersistent = true }, identity);
+            HttpContext.GetOwinContext().Authentication.SignIn(identity);
             return Content("123");
         }
     }

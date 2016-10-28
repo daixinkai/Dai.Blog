@@ -12,11 +12,11 @@ namespace Dai.Blog.Web
         {
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
-                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/Account/Login"),
+                AuthenticationType = DaiBlogAuthenticationTypes.ApplicationCookie,
+                LoginPath = new PathString("/account/login"),
             });
 
-            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
+            app.UseExternalSignInCookie(DaiBlogAuthenticationTypes.ExternalCookie);
 
         }
     }
