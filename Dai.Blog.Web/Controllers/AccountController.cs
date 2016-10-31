@@ -21,7 +21,7 @@ namespace Dai.Blog.Web.Controllers
             claims.Add(new Claim(ClaimTypes.Role, "Users"));
 
             var identity = new ClaimsIdentity(claims, "MyClaimLogin");
-
+             
             //ClaimsPrincipal principal = new ClaimsPrincipal(identity);
             HttpContext.GetOwinContext().Authentication.SignIn(new AuthenticationProperties { IsPersistent = true }, identity);
             //var claimsIdentity =
