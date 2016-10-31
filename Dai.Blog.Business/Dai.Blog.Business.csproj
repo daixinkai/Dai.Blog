@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6B9797AC-A7D5-4827-B2E1-C932FC64A77A}</ProjectGuid>
+    <ProjectGuid>{856E1BA1-42EF-496E-9905-9C66386BB7B8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dai.Blog.Common</RootNamespace>
-    <AssemblyName>Dai.Blog.Common</AssemblyName>
+    <RootNamespace>Dai.Blog.Business</RootNamespace>
+    <AssemblyName>Dai.Blog.Business</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,8 +34,17 @@
       <HintPath>..\packages\Dai.CommonLib.Core.2.0.1.0\lib\net45\Dai.CommonLib.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Dai.CommonLib.Sql, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dai.CommonLib.Sql.2.0.0.0\lib\net45\Dai.CommonLib.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dai.CommonLib.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dai.CommonLib.Web.1.0.0.0\lib\net45\Dai.CommonLib.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,8 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="DaiBlogAuthenticationTypes.cs" />
+    <Compile Include="ThreadCache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
